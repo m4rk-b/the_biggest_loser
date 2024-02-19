@@ -12,14 +12,14 @@
     
 </style>
 <body>
-    <div class="leader-board border">
+    <div class="leader-board border shadow-sm">
         <div class="bg-primary leader-board-title">
             <h3 class="text-light">The Biggest Loser Leader Board</h3>
         </div>
 
         <% locals.results.forEach(result => { %>
             
-        <div class="leader-container bg-light border border-light">
+        <div class="leader-container bg-light border border-light shadow-sm">
             <div class="img-container">
                 <img src="images/user1.png" class="rounded-circle border" alt="">
             </div>
@@ -27,16 +27,16 @@
                 <div class="user-container">
                     <p class="fs-6 fw-bold"><%= result.username %></p>
                     <% if (result.weight <= 0) { %>
-                        <p class="fs-7 text-muted">Gained <%= Math.abs(result.weight).toFixed(2) %> kg</p>
+                        <p class="fs-7 text-muted">Gained <%= Math.abs(result.weight).toFixed(2) %>%</p>
                     <% }else{ %>
-                        <p class="fs-7 text-muted">Lost <%= Math.abs(result.weight).toFixed(2) %> kg</p>
+                        <p class="fs-7 text-muted">Lost <%= Math.abs(result.weight).toFixed(2) %>%</p>
                     <% } %>
                 </div>
                 <div class="icon-container">
                     <% if (result.weight <= 0) { %>
-                        <i class="bi bi-chevron-compact-down fs-8 fw-bold" style="color: red;"></i>
+                        <i class="bi bi-chevron-compact-up fs-8 fw-bold" style="color: red;"></i>
                     <% }else{ %>
-                        <i class="bi bi-chevron-compact-up fs-8 fw-bold" style="color: green;"></i>
+                        <i class="bi bi-chevron-compact-down fs-8 fw-bold" style="color: green;"></i>
                     <% } %>
                 </div>
             </div>
