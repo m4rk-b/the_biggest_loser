@@ -35,7 +35,7 @@ img{
 
 .img-container{
     display: inline-block;
-    position: fixed;
+    position: absolute;
     height: 50px;
     width: 50px;
 }
@@ -73,7 +73,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     height: 65px;
-    width: 500px;
+    width: 600px;
     padding: 6px;
 }
 
@@ -87,7 +87,7 @@ img{
     margin-right: auto;
     margin-bottom: auto;
     height: auto;
-    width: 550px;
+    width: 650px;
 }
 
 .trophy-icon{
