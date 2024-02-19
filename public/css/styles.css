@@ -1,0 +1,95 @@
+img{
+    height: 50px;
+    width: 50px;
+}
+.user-container{
+    padding: 10px;
+}
+
+.col-sm-auto{
+    padding-right: 0px;
+}
+
+.username-container{
+    margin: 0px;
+}
+
+.fs-7{
+    font-size: 0.75rem;
+    margin: 0px;
+}
+
+.fs-8{
+    font-size: 0.55rem;
+    margin: 0px;
+    -webkit-text-stroke: 1px;
+}
+
+.fs-6{
+    margin: 0px;
+}
+
+.icon-caret{
+    font-size: 0.5rem;
+}
+
+.img-container{
+    display: inline-block;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+}
+
+.user-container{
+    display: inline-block;
+    padding: 0px;
+    margin-top: 3px;
+}
+
+.subtext-container{
+    display: block;
+}
+
+.icon-container{
+    display: inline-block;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.info-container{
+    display: inline-block;
+    margin-left: 55px;
+}
+
+.trophy{
+    display: inline;
+    float: right;
+    margin: 12px;
+}
+
+.leader-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 65px;
+    width: 500px;
+    padding: 6px;
+}
+
+.leader-board-title{
+    padding: 10px;
+}
+
+.leader-board{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    height: auto;
+    width: 550px;
+}
+
+.trophy-icon{
+    -webkit-text-stroke: 1px;
+}
