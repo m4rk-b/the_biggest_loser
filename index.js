@@ -28,6 +28,14 @@ app.get('/', async (req, res) => {
     res.render('index.ejs', {results, trophy});
 });
 
+app.post('/update/:username', async (req, res) => {
+    const user = req.params.username;
+    const weight1 = req.body.weight;
+    const query = await db.query('UPDATE users SET next_weighin = $1 WHERE username = $2 ', [weight1, user]);
+
+    res.sendStatus(200);
+});
+
 app.listen(port, () => {
     console.log(`Running on port ${port}.`);
 });
