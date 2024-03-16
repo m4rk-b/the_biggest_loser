@@ -25,7 +25,8 @@ app.get('/', async (req, res) => {
     const results = query.rows;
     const trophy = query.rows[0].username;
     //console.log(results);
-    res.render('index.ejs', {results, trophy});
+    // res.render('index.ejs', {results, trophy});
+    res.send(results);
 });
 
 app.post('/update/:username', async (req, res) => {
