@@ -20,7 +20,7 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.get('/', async (req, res) => {
+app.get('/tbl/api', async (req, res) => {
     const query = await db.query('SELECT *, (1 - (next_weighin/initial_weighin)) * 100 AS weight FROM users ORDER BY weight DESC');
     const results = query.rows;
     const trophy = query.rows[0].username;
