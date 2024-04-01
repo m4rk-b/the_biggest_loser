@@ -29,10 +29,10 @@ app.get('/tbl/api', async (req, res) => {
     res.send(results);
 });
 
-app.post('/update/:username', async (req, res) => {
-    const user = req.params.username;
+app.post('/update/:name', async (req, res) => {
+    const user = req.params.name;
     const weight1 = req.body.weight;
-    const query = await db.query('UPDATE users SET next_weighin = $1 WHERE username = $2 ', [weight1, user]);
+    const query = await db.query('UPDATE users SET next_weighin = $1 WHERE name = $2 ', [weight1, user]);
 
     res.sendStatus(200);
 });
